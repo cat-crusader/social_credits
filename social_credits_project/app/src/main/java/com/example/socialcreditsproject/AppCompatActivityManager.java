@@ -1,6 +1,7 @@
 package com.example.socialcreditsproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -43,5 +44,20 @@ public class AppCompatActivityManager extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);}
 
+    }
+    public static final String SHARED_PREFS = "sharedPrefs";
+    public static final String TEXT = "text";
+
+    public void saveData(int data){
+        SharedPreferences sharedPreferences =  getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt(TEXT,data);
+        editor.apply();
+
+    }
+    public Integer loadData(){
+        SharedPreferences sharedPreferences =getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        return sharedPreferences.getInt(TEXT,0);
     }
 }
