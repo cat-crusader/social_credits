@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Social Credits Project</string>
+    
+    <string-array name="shop_items">
+
+        <item>Buy Snack</item>
+        <item>Check map</item>
+        <item>Relax for hour</item>
+        <item>Play Minecraft</item>
+
+    </string-array>
+
+    <string-array name="shop_items_description">
+
+        <item>random description</item>
+        <item>random description</item>
+        <item>random description</item>
+        <item>random description</item>
+
+    </string-array>
+
 </resources>
