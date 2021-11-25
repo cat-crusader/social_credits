@@ -19,4 +19,22 @@
 
     </string-array>
 
+    <string-array name="work_items">
+
+        <item>Go for a walk</item>
+        <item>Geography test</item>
+        <item>Do some homework</item>
+        <item>Do laboratory work</item>
+
+    </string-array>
+
+    <string-array name="work_items_description">
+
+        <item>random description</item>
+        <item>random description</item>
+        <item>random description</item>
+        <item>random description</item>
+
+    </string-array>
+
 </resources>
