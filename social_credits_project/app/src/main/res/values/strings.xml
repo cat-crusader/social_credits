@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Social Credits Project</string>
-    
+
     <string-array name="shop_items">
 
         <item>Buy Snack</item>

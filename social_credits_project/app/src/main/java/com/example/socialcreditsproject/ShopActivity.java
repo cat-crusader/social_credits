@@ -13,6 +13,7 @@ public class ShopActivity extends AppCompatActivityManager {
                   R.drawable.img_1,
                   R.drawable.img_3,
                   R.drawable.img};
+    int prices[]={-20,-10,-50,-3000};
     RecyclerView recyclerView;
 
     @Override
@@ -27,7 +28,7 @@ public class ShopActivity extends AppCompatActivityManager {
 
 
 
-        RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this,s1,s2,images);
+        RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this,s1,s2,images,prices);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
